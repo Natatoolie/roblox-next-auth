@@ -1,3 +1,4 @@
+export const runtime = "edge";
 import { randomUUID } from "crypto";
 import { NextRequest, NextResponse } from "next/server";
 import { removeFromDatabase, uploadToDatabase } from "../utils/sessionToDb";
@@ -6,8 +7,6 @@ interface RequestFromRoblox {
 	userId: number;
 	playerJoined: boolean;
 }
-
-export const runtime = "edge";
 
 export async function POST(req: NextRequest) {
 	const data: RequestFromRoblox = await req.json();

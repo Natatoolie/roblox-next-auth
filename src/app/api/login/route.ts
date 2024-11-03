@@ -1,10 +1,9 @@
+export const runtime = "edge";
 import { getUserFromDatabase } from "@/app/utils/sessionToDb";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { NextRequest, NextResponse } from "next/server";
 import { use } from "react";
-
-export const runtime = "edge";
 
 export async function POST(req: NextRequest) {
 	const data = await req.json();
