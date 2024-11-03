@@ -1,4 +1,3 @@
-export const runtime = "edge";
 import { randomUUID } from "crypto";
 import { NextRequest, NextResponse } from "next/server";
 import { removeFromDatabase, uploadToDatabase } from "../utils/sessionToDb";
