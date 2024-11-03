@@ -7,6 +7,8 @@ interface RequestFromRoblox {
 	playerJoined: boolean;
 }
 
+export const runtime = "edge";
+
 export async function POST(req: NextRequest) {
 	const data: RequestFromRoblox = await req.json();
 	const { userId, playerJoined } = data;
