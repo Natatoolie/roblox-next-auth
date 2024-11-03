@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-	experimental: {
-		runtime: "edge",
-	},
-};
+export const runtime = "edge";
+const nextConfig = {};
 
 export default nextConfig;
